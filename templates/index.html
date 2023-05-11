@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>OpenAI Experiments</title>
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='logo.webp') }}"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+  <img src="{{ url_for('static', filename='logo.webp') }}" class="icon" />
+  <h3>Correct my Grammar</h3>
+  <form action="/" method="post">
+    {% if result %}
+    <input type="text" name="user_text" placeholder="Enter a Sentence" value="{{ result }}" required />
+    {% else %}
+    <input type="text" name="user_text" placeholder="Enter a Sentence" required />
+    {% endif %}
+    <input type="submit" value="Correct" />
+  </form>
+  {% if result %}
+  <div class="result">{{ result }}</div>
+  {% endif %}
+</body>
