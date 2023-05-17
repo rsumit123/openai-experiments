@@ -1,0 +1,24 @@
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=60, s-maxage=600, stale-while-revalidate=600
+X-Envoy-Upstream-Service-Time: 922
+X-Varnish-Ttl: 600.000
+X-Varnish-Backend: fashion-app
+X-Proxy-Cache: MISS
+Server-Timing: cache;desc="Cache: MISS",backend;desc="Backend: fashion-app",xid;desc="Xid: 1684308611.257484114",compression;desc="Compression: true",traceparent;desc="Traceparent: 00-1d00acd8980ad4ade451db7049079bb9-00cbfd4381e743b8-01"
+Accept-Ranges: bytes
+X-Varnish-Router-Backend: assembly-cacher
+Etag: W/"262c0-0763YuQRuhMGOcCU50amEPkhHIE"
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Frame-Options: sameorigin
+X-Xss-Protection: 1; mode=block
+X-Original-Host: www.johnlewis.com
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+X-Akamai-Transformed: 9 - 0 pmb=mTOE,3
+Content-Encoding: gzip
+Date: Wed, 17 May 2023 07:30:12 GMT
+Set-Cookie: mt.v=5.1910465482.1684308611196; Path=/; Max-Age=157680000; Domain=.johnlewis.com
+Set-Cookie: _abck=14D73B022FDF8AD75FB8E58A1875BCD9~-1~YAAQJDErF9P+JAaIAQAA69SdKAkNKUsAwi1s1GnGkBRkzwNEp0NWV3YgOr1f56FVz+vTe9I/1S3avDHNkmu8E6/8UR1yk7xNLkSV3iWYm/i9stCo6pzstl0l9WahWp1Ec5x+bNcmQXls3jnhaTuy5Qj56H+G2tU/m8vp7KRTYiofKrlAOchJEkfaPx94GJQ6VtwBfTpZmRjficQU9Ivfl2GlBYakPRovRvuk5/C3QNs/658PaOOZzczPJCD5Empkw4hDFA+U+V/4FxsEvBZQpshPdtJkYz0br5MWXqilkSXZgM4Gz/LMn8Yly6Tgq5kvgBayxTtHiSI6bdNWEbN2GZAJnXjjzVQEDaMfXYiZnOKwwTmyB3ZtUpAAagXihwI=~-1~-1~-1; Domain=.johnlewis.com; Path=/; Expires=Thu, 16 May 2024 07:30:12 GMT; Max-Age=31536000; Secure
+Set-Cookie: ak_bmsc=6193F664E553264306A4B30176FD27B8~000000000000000000000000000000~YAAQJDErF9T+JAaIAQAA69SdKBO3AI80wFkURODA/MTFFNGpANqs8oMR2f8x3Ea5GwSyNDVGl4na1OmPI287FhMxG7gSlChqkwYNZBebEIDZIiWbIxLeMuXelYSsnxkfwrX4KHg4HNs4UmYAjRVi7m/WjBbf+MfvGn+jWXeNxXbVlwRFysux/gb/hnZFzlEkpQDtithRX7hbkOBttv8zipaWeyyLmmIlan2zCWblY09rFK4bDbe2TLMMrZqoGvqmC47vAJsTrNR5zQrl1Zx1ct0qdoKPw3O/tqOcWtD8xNH9ewtqMZUzjf2dBnJj1Zb98eE3UyMUYjSXUAsX/5INO/ChlBQaRaeJdR1gG8oGSejLIV0IcIn3V3yntyYqBoi/9g==; Domain=.johnlewis.com; Path=/; Expires=Wed, 17 May 2023 09:30:11 GMT; Max-Age=7199; HttpOnly
+Set-Cookie: bm_mi=239C5040E445ECC19EE71BEBCE3EC8B7~YAAQJDErF9X+JAaIAQAA69SdKBOiaOdhCogiOarOngcJ38lusMPR4u8hsgUsGG47yy/6dqY+Z6seotRHVry8T/7ruVDNz9axOj7PB4xhZ3VBGR0v1DAg5mVaOlXVtV1y2sCpuNdhQDqD3/5yNVL9fEWXj28Ko/bjSKS4i0EyVSsbFG2Ok0mHCSq2gIx/PJjP8MK1BwnxFigsopTXfPrdpswNDRR6+I722Ogavsgiobxsq4ot1xHh0cu6Lf2QQLO0jWkKYqUv2VHBsbevtF2o9yxp99iozhsLe2Y210sdNzi6IiYHtMpYBBLudoAfBwHImrK/GlQzM6/22Fom1Jo/vbX45fA+/cqUQmU6RFCY5yp9rlb1GZOEPFg=~1; Domain=.johnlewis.com; Path=/; Expires=Wed, 17 May 2023 07:30:12 GMT; Max-Age=0; Secure
+Set-Cookie: bm_sz=583DE3F4DEA9465BE2F2F3106CD1819C~YAAQJDErF9b+JAaIAQAA69SdKBOJWoIrREAonof17dRVNWhl4D00R6gaA5KWU++8uLY8sl5OZfDKJHI3UA7v4QEWoc23VTLjkY6xbNuR/Dx4mn9atrgyYp2muFGR4CDArkSOcHav6BkRo5gWJ6iiCeiAcBb6Y9fSod5bJYYKC146rXqidgSvWmwpjk1kJsBhxu7zeNz71oJpLbzf671XBdIjOCUn5oEbGJeyuW8/BO1H/vlExvhKj413Vz3dFltcOTiBtcgN6fypJyt8Cce01EKM6HpEVyskiAoss8h0xVa7GGikQng=~3159604~4273462; Domain=.johnlewis.com; Path=/; Expires=Wed, 17 May 2023 11:30:11 GMT; Max-Age=14399

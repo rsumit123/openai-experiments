@@ -1,0 +1,20 @@
+Content-Length: 1721
+Content-Type: text/plain
+Last-Modified: Mon, 24 Apr 2023 11:54:34 GMT
+X-Varnish-Ttl: 3600.000
+X-Varnish-Backend: google-buckets
+Etag: W/"279464b63f523e7d9ad7ee54cc98695a"
+Content-Encoding: gzip
+X-Proxy-Cache: HIT
+Server-Timing: cache;desc="Cache: HIT",backend;desc="Backend: google-buckets",xid;desc="Xid: 1682339104.125870",compression;desc="Compression: true",traceparent;desc="Traceparent: 00-ac6d361d4a40b6466a383ae5e0a99950-05519ce5ead3cac5-01"
+Accept-Ranges: bytes
+X-Envoy-Upstream-Service-Time: 6
+X-Varnish-Router-Backend: assembly-cacher
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Frame-Options: sameorigin
+X-Original-Host: www.johnlewis.com
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Cache-Control: public, must-revalidate, max-age=51
+Date: Wed, 17 May 2023 07:30:08 GMT
+Set-Cookie: ak_bmsc=57A5FFCDE22D85C2CC315EE111725183~000000000000000000000000000000~YAAQJDErF4P+JAaIAQAAPsSdKBNR8oByQntBXpdDuLjm9jU+VG7NJnQ0/OrXpwklg0fhKk0GkQWofmOzO+lHABBg3aUUnobubkDfqRUxuN+48KU36Iozp0LYgGie/gVZNZDswusUpjmV/Bc3jRMcR5B9dpdhdNxyCRqS0fH9IiXrxSewXd2at22tjh5WPv9+5GV9gOxf9l5vjNYWNfOSYSM/Bxeqsx1lro5lcdWDxSSAY0cAnn4l1mokem+DpHEsRqR2fmX496hClTEb5KWkPf4VbT2eN+lFs7MCPguRvWoNUzg5t5QEeBK+cEoTpmpEnATSvidZbAlUu5f3W6RNeusWpKSWxzvtFINoqxHK31LKeBOXF3i4IEnV5CUjbM1jaw==; Domain=.johnlewis.com; Path=/; Expires=Wed, 17 May 2023 09:30:07 GMT; Max-Age=7199; HttpOnly
