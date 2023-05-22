@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <title>OpenAI Experiments</title>
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='logo.webp') }}"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+  <img src="{{ url_for('static', filename='logo.webp') }}" class="icon" />
+  <h4>Generate JohnLewis product descriptions</h4>
+  <form action="/finetuning" method="post">
+    <input
+      type="text"
+      name="user_text"
+      placeholder="Enter a johnlewis url"
+      required
+    />
+
+    <input type="submit" value="Get Description" />
+  </form>
+  {% if prompt %}
+  <h4>The model input is:</h4>
+  <div class="result">{{ prompt }}</div>
+  {% endif %} {% if result %}
+
+  <h4>The model output is:</h4>
+  <div class="result">{{ result }}</div>
+  {% endif %}
+</body>

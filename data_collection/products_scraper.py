@@ -8,7 +8,26 @@ class JohnLewisScraper(scrapy.Spider):
     name = "johnlewis_scraper"
 
     start_urls = [
-        "https://www.johnlewis.com/browse/women/womens-boots/_/N-7oo3"
+        # "https://www.johnlewis.com/browse/women/womens-boots/_/N-7oo3",
+        # "https://www.johnlewis.com/browse/women/womens-shoes/_/N-7oo5",
+        # "https://www.johnlewis.com/browse/women/womens-boots/_/N-7oo3?page=2",
+        # "https://www.johnlewis.com/browse/women/womens-shoes/_/N-7oo5?page=2",
+        # "https://www.johnlewis.com/browse/women/womens-boots/_/N-7oo3?page=3",
+        # "https://www.johnlewis.com/browse/women/womens-shoes/_/N-7oo5?page=3",
+        # "https://www.johnlewis.com/browse/women/womens-boots/_/N-7oo3?page=4",
+        # "https://www.johnlewis.com/browse/women/womens-shoes/_/N-7oo5?page=4",
+        # "https://www.johnlewis.com/browse/women/womens-shoes/_/N-7oo5?page=5",
+        # "https://www.johnlewis.com/browse/women/womens-shoes/_/N-7oo5?page=6",
+        # "https://www.johnlewis.com/search/men/_/N-50es?search-term=shoes",
+        # "https://www.johnlewis.com/search/men/_/N-50es?search-term=shoes&page=2",
+        # "https://www.johnlewis.com/search/men/_/N-50es?search-term=shoes&page=3",
+        # "https://www.johnlewis.com/search/men/_/N-50es?search-term=shoes&page=4",
+        # "https://www.johnlewis.com/search/men/_/N-50es?search-term=shoes&page=5",
+        # "https://www.johnlewis.com/search/men/mens-trainers/_/N-50esZ7ono?search-term=shoes",
+        # "https://www.johnlewis.com/search/men/mens-trainers/_/N-50esZ7ono?search-term=shoes&page=2"
+
+        "https://www.johnlewis.com/search/men/mens-boots/_/N-50esZ7onk?search-term=shoes&chunk=3"
+        
     ]
 
     custom_settings = {
@@ -17,6 +36,8 @@ class JohnLewisScraper(scrapy.Spider):
         },
         "LOG_ENABLED": False,
     }
+
+    
 
     def parse(self, response):
         # Parse the response data using XPath selectors
@@ -66,15 +87,10 @@ class JohnLewisScraper(scrapy.Spider):
 
         description = "\n".join(all_description_text)
 
-        return description
-
-
-
-        description = response.xpath(
-            '//*[@data-cy="product-description"]/div/p[1]/text()'
-        ).get()
+        
 
         return description
+
 
     def get_product_specification(self, response):
         """Get the product specification from the product page"""
@@ -85,7 +101,7 @@ class JohnLewisScraper(scrapy.Spider):
 
         all_spec_text = []
 
-        for i in range(len(specs_count)):
+        for i in range(1,len(specs_count)):
             specification_key = response.xpath(
                 f'//*[@data-cy="product-specification"]/ul/li[{i+1}]/strong/text()'
             ).get()
