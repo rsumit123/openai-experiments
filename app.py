@@ -22,13 +22,14 @@ def index():
                 frequency_penalty=0.0,
                 presence_penalty=0.0,
             )
-            return redirect(url_for("index", result=response.choices[0].text))
+            return redirect(url_for("index", result=response.choices[0].text, prompt=user_text))
         except Exception as e:
             print("Error in inferencing", e)
             return redirect(url_for("index", result=f"Error in inference -> {e}"))
 
     result = request.args.get("result")
-    return render_template("index.html", result=result)
+    prompt = request.args.get("prompt")
+    return render_template("index.html", result=result, prompt=prompt)
 
 
 @app.route("/finetuning", methods=("GET", "POST"))

@@ -17,7 +17,13 @@
     
     <input type="submit" value="Correct" />
   </form>
-  {% if result %}
+  {% if prompt %}
+  <h4>The model input is:</h4>
+  <div class="result">{{ prompt }}</div>
+  {% endif %} {% if result %}
+
+  <h4>The model output is:</h4>
   <div class="result">{{ result }}</div>
   {% endif %}
+  
 </body>
