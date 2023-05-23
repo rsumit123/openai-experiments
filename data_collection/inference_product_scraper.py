@@ -35,10 +35,17 @@ def get_product_specification(response):
 def scrape_this_johnlewis_url(url):
     """make a request to the url and get the product specification"""
 
-    print("making request....")
+    if (
+        url
+        == "https://www.johnlewis.com/skechers-bobs-squad-chaos-face-off-trainers/p6377789"
+    ):
+        with open("data_collection/html_files/johnlewis.html", "r") as f:
+            scrapy_response = HtmlResponse(url=url, body=f.read(), encoding="utf-8")
+    else:
+        print("making request....")
+        response = requests.get(url, headers=headers)
+        scrapy_response = HtmlResponse(url=url, body=response.text, encoding="utf-8")
 
-    response = requests.get(url, headers=headers)
-    scrapy_response = HtmlResponse(url=url, body=response.text, encoding="utf-8")
     prod_specification = get_product_specification(scrapy_response)
 
     return prod_specification
