@@ -11,17 +11,21 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 @app.route("/", methods=("GET", "POST"))
 def index():
     if request.method == "POST":
-        user_text = request.form["user_text"]
-        response = openai.Completion.create(
-            model="text-davinci-003",
-            prompt=generate_prompt(user_text),
-            temperature=0,
-            max_tokens=60,
-            top_p=1.0,
-            frequency_penalty=0.0,
-            presence_penalty=0.0,
-        )
-        return redirect(url_for("index", result=response.choices[0].text))
+        try:
+            user_text = request.form["user_text"]
+            response = openai.Completion.create(
+                model="text-davinci-003",
+                prompt=generate_prompt(user_text),
+                temperature=0,
+                max_tokens=60,
+                top_p=1.0,
+                frequency_penalty=0.0,
+                presence_penalty=0.0,
+            )
+            return redirect(url_for("index", result=response.choices[0].text))
+        except Exception as e:
+            print("Error in inferencing", e)
+            return redirect(url_for("index", result=f"Error in inference -> {e}"))
 
     result = request.args.get("result")
     return render_template("index.html", result=result)

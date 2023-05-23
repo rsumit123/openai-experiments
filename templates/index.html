@@ -12,11 +12,9 @@
   <img src="{{ url_for('static', filename='logo.webp') }}" class="icon" />
   <h3>Correct my Grammar</h3>
   <form action="/" method="post">
-    {% if result %}
-    <input type="text" name="user_text" placeholder="Enter a Sentence" value="{{ result }}" required />
-    {% else %}
+    
     <input type="text" name="user_text" placeholder="Enter a Sentence" required />
-    {% endif %}
+    
     <input type="submit" value="Correct" />
   </form>
   {% if result %}
